@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: url('../images/laptop-coffee.jpg') no-repeat center center;
+  background-size: 100% auto;
+}
+
+.theme-btn {
+  display: inline-block;
+  border: 2px solid white;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  min-width: 150px;
+  text-align: center;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.theme-btn:hover {
+  background-color: white;
+}
+
+.theme-btn a:hover {
+  text-decoration: none;
+}
+
+/****************
+Content Block
+*****************/
+
+.container,
+.inner-wrapper,
+.content-wrapper {
+  height: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+.inner-wrapper {
+  font-family: avenir;
+}
+
+.content-block {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jumbotron {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+
+
+/****************
+Navigation
+*****************/
+
+ul {
+  width: 100%;
+  text-align: right;
+}
+
+li {
+  display: inline-block;
+  width: 100px;
+  padding: 0;
+  background-color: rgba(0,0,0,0.6);
+}
+
+li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
