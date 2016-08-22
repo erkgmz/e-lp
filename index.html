@@ -1,40 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>Erik Gomez</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
+    <link rel="stylesheet" href="style/styles.css">
   </head>
   <body>
 
     <div class="container">
       <div class="inner-wrapper jumbotron">
+        <div ng-controller="ContentController">
 
-        <div class="nav-wrapper">
-          <ul>
-            <li><a href="#">FACEBOOK</a></li>
-            <li><a href="#">TWITTER</a></li>
-            <li><a href="#">LINKEDIN</a></li>
-            <li><a href="#">GITHUB</a></li>
-          </ul>
-        </div>
-
-        <div class="content-wrapper">
-          <div class="content-block">
-            <h1>WEB DEVELOPER.</h1>
-            <p>
-              I'm Erik - creative thinker, passionate learner, and JavaScript developer.
-            </p>
-            <a href="#" class="theme-btn">LET'S BUILD</a>
+          <div class="nav-wrapper">
+            <ul>
+              <li ng-repeat="cta in socialCTAs">
+                <a href="{{cta.src}}">{{cta.text}}</a>
+              </li>
+            </ul>
           </div>
 
+          <div class="content-wrapper">
+            <div class="content-block">
+              <h1>{{headline}}</h1>
+              <p>{{byline}}</p>
+              <a href="{{contentBlockCTAText.src}}"
+                class="theme-btn">
+                {{contentBlockCTAText.text}}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <!-- https://code.angularjs.org/1.5.8/docs/guide/animations  -->
+    <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/content-controller.js"></script>
   </body>
 </html>
