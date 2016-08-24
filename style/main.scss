@@ -1,0 +1,148 @@
+$breakpoint-xs: 320px;
+$breakpoint-sm: 550px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1023px;
+$breakpoint-xl: 1400px;
+
+html {
+  height: 100%;
+  width: 100%;
+
+  body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url('../images/laptop-coffee.jpg') no-repeat center center;
+    background-size: 165vh auto;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    a {
+      cursor: pointer;
+    }
+
+    .desktop-nav {
+      display: none;
+    }
+
+    .social-container {
+      height: auto;
+      padding: 6px 15px;
+      background-color: rgba(0, 0, 0, 0.7);
+
+      .btn-group {
+
+        .btn {
+          font-size: 20px;
+          border: none;
+          color: white;
+          background-color: rgba(0, 0, 0, .001);
+        }
+
+        .drop-down-menu {
+
+          li {
+            text-align: center;
+
+            hr {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .content-wrapper {
+      color: white;
+
+      .content-block {
+        position: absolute;
+        top: 30%;
+      }
+
+      .theme-btn {
+        display: inline-block;
+        border: 2px solid white;
+        color: white;
+        padding: 8px;
+        border-radius: 5px;
+        min-width: 150px;
+        text-align: center;
+        background-color: transparent;
+        transition: background-color 0.4s ease;
+
+        &:hover {
+          background-color: white;
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+
+    @media(min-width: $breakpoint-md) {
+      background-size: 155vh auto;
+
+      .social-container {
+        background-color: rgba(0, 0, 0, 0.7);
+
+        .mobile-nav {
+          display: none;
+        }
+
+        .desktop-nav {
+          display: block;
+
+          li {
+            display: inline-block;
+            float: right;
+            text-align: center;
+
+            a {
+              color: white;
+              transition: background-color 0.4s ease;
+              border-radius: 5px;
+
+              &:hover {
+                background-color: white;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+
+      .theme-btn {
+        margin: 45px 0 0;
+      }
+    }
+
+    @media(min-width: $breakpoint-lg) {
+      background-size: 186vh;
+
+      h1 {
+        font-size: 8rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+
+      .theme-btn {
+        margin: 45px 0 0;
+      }
+    }
+
+    @media(min-width: $breakpoint-xl) {
+      background-size: 200vh;
+    }
+  }
+}

@@ -1,90 +1,88 @@
 html {
   height: 100%;
-  width: 100%;
-  background-color: white;
-}
+  width: 100%; }
+  html body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url("../images/laptop-coffee.jpg") no-repeat center center;
+    background-size: 165vh auto;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-sizing: border-box; }
+    html body a {
+      cursor: pointer; }
+    html body .desktop-nav {
+      display: none; }
+    html body .social-container {
+      height: auto;
+      padding: 6px 15px;
+      background-color: rgba(0, 0, 0, 0.7); }
+      html body .social-container .btn-group .btn {
+        font-size: 20px;
+        border: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.001); }
+      html body .social-container .btn-group .drop-down-menu li {
+        text-align: center; }
+        html body .social-container .btn-group .drop-down-menu li hr {
+          margin: 0; }
+    html body .content-wrapper {
+      color: white; }
+      html body .content-wrapper .content-block {
+        position: absolute;
+        top: 30%; }
+      html body .content-wrapper .theme-btn {
+        display: inline-block;
+        border: 2px solid white;
+        color: white;
+        padding: 8px;
+        border-radius: 5px;
+        min-width: 150px;
+        text-align: center;
+        background-color: transparent;
+        transition: background-color 0.4s ease; }
+        html body .content-wrapper .theme-btn:hover {
+          background-color: white;
+          text-decoration: none;
+          color: black; }
+    @media (min-width: 768px) {
+      html body {
+        background-size: 155vh auto; }
+        html body .social-container {
+          background-color: rgba(0, 0, 0, 0.7); }
+          html body .social-container .mobile-nav {
+            display: none; }
+          html body .social-container .desktop-nav {
+            display: block; }
+            html body .social-container .desktop-nav li {
+              display: inline-block;
+              float: right;
+              text-align: center; }
+              html body .social-container .desktop-nav li a {
+                color: white;
+                transition: background-color 0.4s ease;
+                border-radius: 5px; }
+                html body .social-container .desktop-nav li a:hover {
+                  background-color: white;
+                  color: black; }
+        html body h1 {
+          font-size: 5rem; }
+        html body p {
+          font-size: 1.6rem; }
+        html body .theme-btn {
+          margin: 45px 0 0; } }
+    @media (min-width: 1023px) {
+      html body {
+        background-size: 186vh; }
+        html body h1 {
+          font-size: 8rem; }
+        html body p {
+          font-size: 1.8rem; }
+        html body .theme-btn {
+          margin: 45px 0 0; } }
+    @media (min-width: 1400px) {
+      html body {
+        background-size: 200vh; } }
 
-body {
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  background: url('../images/laptop-coffee.jpg') no-repeat center center;
-  background-size: 100% auto;
-}
-
-.theme-btn {
-  display: inline-block;
-  border: 2px solid white;
-  color: white;
-  padding: 8px;
-  border-radius: 5px;
-  min-width: 150px;
-  text-align: center;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-}
-
-.theme-btn:hover {
-  background-color: white;
-}
-
-.theme-btn a:hover {
-  text-decoration: none;
-}
-
-/****************
-Content Block
-*****************/
-
-.container,
-.inner-wrapper,
-.content-wrapper {
-  height: 100%;
-}
-
-.container {
-  position: relative;
-}
-
-.inner-wrapper {
-  font-family: avenir;
-}
-
-.content-block {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.jumbotron {
-  background-color: transparent;
-  margin-bottom: 0;
-}
-
-
-
-/****************
-Navigation
-*****************/
-
-ul {
-  width: 100%;
-  text-align: right;
-}
-
-li {
-  display: inline-block;
-  width: 100px;
-  padding: 0;
-  background-color: rgba(0,0,0,0.6);
-}
-
-li a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: white;
-}
+/*# sourceMappingURL=styles.css.map */

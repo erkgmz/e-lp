@@ -2,22 +2,25 @@ angular.module('myApp')
   .controller('ContentController', ContentController);
 
   function ContentController($scope) {
-    $scope.headline = 'WEB DEVELOPER.';
-    $scope.byline = 'I\'m Erik - creative thinker, passionate learner, and JavaScript developer.';
+    $scope.headline = 'Hi, I\'m Erik.';
+    $scope.byline = 'Creative thinker, passionate learner, and front-end JavaScript developer.';
 
     class CTA {
-      constructor(text, src = '#') {
+      constructor(text, src = null, mailTo = null) {
         this.text = text;
-        this.src = src;
+        this.hyperText = {
+          src: src,
+          mailTo: mailTo
+        };
       }
     }
 
     $scope.socialCTAs = [
-      new CTA('FACEBOOK', '#fb'),
-      new CTA('TWITTER', '#tw'),
-      new CTA('LINKEDIN', '#lk'),
-      new CTA('GITHUB', '#gh')
+      // new CTA('FACEBOOK', 'https://www.facebook.com/profile.php?id=100012252583651'),
+      new CTA('TWITTER', 'https://twitter.com/?lang=en'),
+      new CTA('GITHUB', 'https://github.com/erkgmz'),
+      new CTA('LINKEDIN', 'https://www.linkedin.com/in/erkgmz')
     ];
 
-    $scope.contentBlockCTAText = new CTA('LET\'S BUILD');
+    $scope.contentCTA = new CTA('CONTACT ME', '','e@erikgomez.co');
   }
