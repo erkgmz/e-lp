@@ -1,5 +1,6 @@
-var angular = require('angular');
+import angular from 'angular';
 
+// GLOBAL CSS & BOOTSTRAP STYLES
 require('../css/bootstrap/fonts/glyphicons-halflings-regular.eot');
 require('../css/bootstrap/fonts/glyphicons-halflings-regular.svg');
 require('../css/bootstrap/fonts/glyphicons-halflings-regular.ttf');
@@ -12,6 +13,4 @@ require('angular-ui-bootstrap');
 
 var app = angular.module('myApp', ['ui.bootstrap', 'ngAnimate']);
 
-// calls module as function and passes in angular module
-// webpack default behavior looks for 'index' files in directories
 require('./content')(app);

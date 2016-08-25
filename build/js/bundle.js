@@ -51,8 +51,15 @@
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var angular = __webpack_require__(2);
+	'use strict';
 
+	var _angular = __webpack_require__(2);
+
+	var _angular2 = _interopRequireDefault(_angular);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// GLOBAL CSS & BOOTSTRAP STYLES
 	__webpack_require__(4);
 	__webpack_require__(5);
 	__webpack_require__(6);
@@ -63,10 +70,8 @@
 	__webpack_require__(21);
 	__webpack_require__(23);
 
-	var app = angular.module('myApp', ['ui.bootstrap', 'ngAnimate']);
+	var app = _angular2.default.module('myApp', ['ui.bootstrap', 'ngAnimate']);
 
-	// calls module as function and passes in angular module
-	// webpack default behavior looks for 'index' files in directories
 	__webpack_require__(25)(app);
 
 /***/ },
@@ -44012,6 +44017,8 @@
 /* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+
 	module.exports = function (app) {
 	  __webpack_require__(26)(app);
 	};
@@ -44020,26 +44027,31 @@
 /* 26 */
 /***/ function(module, exports) {
 
+	'use strict';
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 	module.exports = function (myApp) {
 	  myApp.controller('ContentController', function ($scope) {
 	    $scope.headline = 'Hi, I\'m Erik.';
 	    $scope.byline = 'Creative thinker, passionate learner, and front-end JavaScript developer.';
 
-	    class CTA {
-	      constructor(text, src = null, mailTo = null) {
-	        this.text = text;
-	        this.hyperText = {
-	          src: src,
-	          mailTo: mailTo
-	        };
-	      }
-	    }
+	    var CTA = function CTA(text) {
+	      var src = arguments.length <= 1 || arguments[1] === undefined ? null : arguments[1];
+	      var mailTo = arguments.length <= 2 || arguments[2] === undefined ? null : arguments[2];
 
-	    $scope.socialCTAs = [
-	    // new CTA('FACEBOOK', 'https://www.facebook.com/profile.php?id=100012252583651'),
-	    new CTA('TWITTER', 'https://twitter.com/?lang=en'), new CTA('GITHUB', 'https://github.com/erkgmz'), new CTA('LINKEDIN', 'https://www.linkedin.com/in/erkgmz')];
+	      _classCallCheck(this, CTA);
 
-	    $scope.contentCTA = new CTA('CONTACT ME', '', 'e@erikgomez.co');
+	      this.text = text;
+	      this.hyperText = {
+	        src: src,
+	        mailTo: mailTo
+	      };
+	    };
+
+	    $scope.socialCTAs = [new CTA('TWITTER', 'https://twitter.com/?lang=en'), new CTA('GITHUB', 'https://github.com/erkgmz'), new CTA('LINKEDIN', 'https://www.linkedin.com/in/erkgmz')];
+
+	    $scope.contentCTA = new CTA('CONTACT ME', undefined, 'e@erikgomez.co');
 	  });
 	};
 
