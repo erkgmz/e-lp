@@ -18,6 +18,14 @@ html {
     overflow: hidden;
     box-sizing: border-box;
 
+    h1 {
+      font-size: 5rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
     a {
       cursor: pointer;
     }
@@ -110,14 +118,6 @@ html {
             }
           }
         }
-      }
-
-      h1 {
-        font-size: 5rem;
-      }
-
-      p {
-        font-size: 1.6rem;
       }
 
       .theme-btn {

@@ -10,6 +10,10 @@ html {
     font-family: sans-serif;
     overflow: hidden;
     box-sizing: border-box; }
+    html body h1 {
+      font-size: 5rem; }
+    html body p {
+      font-size: 1.6rem; }
     html body a {
       cursor: pointer; }
     html body .desktop-nav {
@@ -66,10 +70,6 @@ html {
                 html body .social-container .desktop-nav li a:hover {
                   background-color: white;
                   color: black; }
-        html body h1 {
-          font-size: 5rem; }
-        html body p {
-          font-size: 1.6rem; }
         html body .theme-btn {
           margin: 45px 0 0; } }
     @media (min-width: 1023px) {
