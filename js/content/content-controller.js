@@ -1,5 +1,5 @@
 module.exports = function(myApp) {
-  myApp.controller('ContentController', ($scope) => {
+  myApp.controller('ContentController', [ '$scope', ($scope) => {
     $scope.headline = 'Hi, I\'m Erik.';
     $scope.byline = 'Creative thinker, passionate learner, and front-end JavaScript developer.';
 
@@ -14,11 +14,11 @@ module.exports = function(myApp) {
     }
 
     $scope.socialCTAs = [
-      new CTA('TWITTER', 'https://twitter.com/?lang=en'),
+      new CTA('TWITTER', 'https://twitter.com/egomez2040'),
       new CTA('GITHUB', 'https://github.com/erkgmz'),
       new CTA('LINKEDIN', 'https://www.linkedin.com/in/erkgmz')
     ];
 
     $scope.contentCTA = new CTA('CONTACT ME', undefined,'e@erikgomez.co');
-  })
+  }])
 }
