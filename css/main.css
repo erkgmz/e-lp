@@ -11,7 +11,7 @@ html {
     overflow: hidden;
     box-sizing: border-box; }
     html body h1 {
-      font-size: 6.5rem; }
+      font-size: 4.9rem; }
     html body p {
       font-size: 1.6rem; }
     html body a {
@@ -85,5 +85,8 @@ html {
     @media (min-width: 1400px) {
       html body {
         background-size: 200vh; } }
+    @media (orientation: landscape) {
+      html body {
+        background-size: 185vh; } }
 
 /*# sourceMappingURL=main.css.map */
