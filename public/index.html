@@ -36,7 +36,8 @@
                 <li class="col-xs-12"
                   role="menuitem"
                   ng-repeat="cta in socialCTAs">
-                  <a ng-href="{{cta.hyperText.src}}">
+                  <a ng-href="{{cta.hyperText.src}}"
+                    target="_blank">
                     {{cta.text}}
                   </a>
                   <hr>
@@ -48,7 +49,8 @@
             <ul class="nav desktop-nav col-xs-12">
               <li class="col-xs-2"
                 ng-repeat="cta in socialCTAs">
-                <a ng-href="{{cta.hyperText.src}}">
+                <a ng-href="{{cta.hyperText.src}}"
+                  target="_blank">
                   {{cta.text}}
                 </a>
               </li>
