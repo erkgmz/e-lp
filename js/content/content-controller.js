@@ -20,5 +20,5 @@ module.exports = function(myApp) {
     ];
 
     $scope.contentCTA = new CTA('CONTACT ME', undefined,'e@erikgomez.co');
-  }])
-}
+  }]);
+};

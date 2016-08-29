@@ -11,6 +11,13 @@ module.exports = {
     contentBase: 'public'
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/, // include .js files
+        exclude: /node_modules/, // exclude any and all files in the node_modules folder
+        loader: "jshint-loader"
+      }
+    ],
     loaders: [
       {
         test: /\.js$/,
@@ -33,6 +40,18 @@ module.exports = {
         loader: 'url-loader'
       }
     ]
+  },
+  jshint: {
+    camelcase: true,
+
+    emitErrors: false,
+
+    failOnHint: false,
+
+    esversion: 6
+
+    // custom reporter function
+    // reporter: function(errors) { }
   },
   resolve: {
     extensions: ['', '.js', '.es6']
