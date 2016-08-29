@@ -69,12 +69,12 @@ html {
       }
 
       .theme-btn {
-        font-size: 12px;
+        font-size: 14px;
         margin: 10px 0 0;
         display: inline-block;
         border: 2px solid white;
         color: white;
-        padding: 4px;
+        padding: 6px;
         border-radius: 5px;
         min-width: 150px;
         text-align: center;
@@ -147,7 +147,7 @@ html {
 
     @media (min-device-width: 414px)
       and (orientation: landscape) {
-        background: url('../images/min-bgimage.jpg') no-repeat top center;
+        background-position: top center;
         background-size: 185vh;
     }
   }
