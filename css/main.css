@@ -54,6 +54,10 @@ html {
     @media (min-width: 768px) {
       html body {
         background-size: 155vh auto; }
+        html body h1 {
+          font-size: 8rem; }
+        html body p {
+          font-size: 1.8rem; }
         html body .social-container {
           background-color: rgba(0, 0, 0, 0.7); }
           html body .social-container .mobile-nav {
@@ -71,15 +75,13 @@ html {
                 html body .social-container .desktop-nav li a:hover {
                   background-color: white;
                   color: black; }
-        html body .theme-btn {
-          margin: 30px 0 0; } }
+        html body .content-wrapper .content-block .theme-btn {
+          font-size: 16px;
+          margin: 15px 0 0;
+          padding: 8px; } }
     @media (min-width: 1023px) {
       html body {
         background-size: 186vh; }
-        html body h1 {
-          font-size: 8rem; }
-        html body p {
-          font-size: 1.8rem; }
         html body .theme-btn {
           margin: 45px 0 0; } }
     @media (min-width: 1400px) {

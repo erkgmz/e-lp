@@ -92,6 +92,14 @@ html {
     @media(min-width: $breakpoint-md) {
       background-size: 155vh auto;
 
+      h1 {
+        font-size: 8rem;
+      }
+
+      p {
+        font-size: 1.8rem;
+      }
+
       .social-container {
         background-color: rgba(0, 0, 0, 0.7);
 
@@ -120,21 +128,22 @@ html {
           }
         }
       }
-      .theme-btn {
-        margin: 30px 0 0;
+
+      .content-wrapper {
+
+        .content-block {
+          
+          .theme-btn {
+            font-size: 16px;
+            margin: 15px 0 0;
+            padding: 8px;
+          }
+        }
       }
     }
 
     @media(min-width: $breakpoint-lg) {
       background-size: 186vh;
-
-      h1 {
-        font-size: 8rem;
-      }
-
-      p {
-        font-size: 1.8rem;
-      }
 
       .theme-btn {
         margin: 45px 0 0;
