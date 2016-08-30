@@ -40,6 +40,7 @@ The controller in `./js/content/content-controller.js` exports a function that t
 We also pass in the `$scope` object via [Inline Array Annotation](https://docs.angularjs.org/guide/di) so we can expose our variables for use in the HTML.
 
 [Angular Animate documentation](https://docs.angularjs.org/api/ngAnimate)
+
 [Angular UI Bootstrap documentation](https://angular-ui.github.io/bootstrap/)
 
 ### Webpack
