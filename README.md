@@ -1,9 +1,10 @@
 # My Website
+Checkout my site at [erikgomez.co](http://erikgomez.co/)
 
 ## Technologies used
 This is my personal website. I chose to develop this as a technology demonstration and portfolio piece.
 
-Why I chose this design/UI?
+I decided to use this design because of its simplicity and scalability. I plan on adding About, Work, Contact, and Portfolio sections in the future.
 
 The technologies used in the development of this site include:
 
@@ -75,4 +76,4 @@ In order to compile CSS stylesheet run `sass main.scss:main.css` from within `cs
 - Configure Webpack to compile SASS files into CSS using the Webpack's sass-loader & node-sass loaders instead of running `sass` command from terminal each time a new stylesheet needs to be generated.
 
 ### Bugs
-Background image not cropping correctly when switching from portrait to landscape modes on mbile devices. 
+- Background image not cropping correctly when switching from portrait to landscape modes on mbile devices.
