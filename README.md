@@ -17,6 +17,7 @@ The technologies used in the development of this site include:
   * Angular UI Bootstrap
 * Webpack
 * Sass
+* Babel
 * Git
 * Trello
 
