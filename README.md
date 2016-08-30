@@ -9,17 +9,38 @@ I decided to use this design because of its simplicity and scalability. I plan o
 The technologies used in the development of this site include:
 
 * HTML, CSS, JavaScript
-* ES6 features
-* Angular.js
-* Angular animate
-* Angular UI Bootstrap
-* Node.js/NPM
 * Bootstrap
-* Sass
+* ES6 features
+* Node.js/NPM
+* Angular.js 1.5.8
+  * Angular Animate 1.5.8
+  * Angular UI Bootstrap
 * Webpack
+* Sass
 * Git
 * Trello
 
+### Angular 1.5.8
+controller/function exports/ index.js files/ angular bootstrap/ angular 1.5/ inline injection
+
+The Angular module lives in `./js/index.js`, where we are importing Angular, Angular Animate, and Angular UI Bootstrap using ___ES6 syntax___ and injecting ui.bootstrap & ngAnimate dependencies.
+
+Webpack default behavior looks for _index_ files in paths that end inside a directory.
+
+For example:
+
+```javascript
+require('./content')(app);
+```
+
+Since no specific file is mentioned, Webpack will go into the `./content` directory and look for an _index_ file. I decided to use index files so I can `require` in files synchronously and keep code maintainable.
+
+The controller in `./js/content/content-controller.js` exports a function that takes 1 argument. This function is called in `./js/content/index.js` and passes a reference to the Angular module from `./js/index.js` as an argument.
+
+We also pass in the `$scope` object via [Inline Array Annotation](https://docs.angularjs.org/guide/di) so we can expose our variables for use in the HTML.
+
+[Angular Animate documentation](https://docs.angularjs.org/api/ngAnimate)
+[Angular UI Bootstrap documentation](https://angular-ui.github.io/bootstrap/)
 
 ### Webpack
 To generate a bundle file in `./public` run `webpack` in root directory.
@@ -40,25 +61,6 @@ Edit styles in `/css/main.scss`.
 Compile sass into css by running `sass main.scss:main.css` from `/css` directory.
 
 You will need to re-run `webpack` to generate bundle file with new styles from the root directory.
-
-### Angular
-controller/function exports/ index.js files/ angular bootstrap/ angular 1.5/ inline injection
-
-The Angular module lives in `./js/index.js`, where we are importing Angular, Angular Animate, and Angular UI Bootstrap using ___ES6 syntax___ and injecting ui.bootstrap & ngAnimate dependencies.
-
-Webpack default behavior looks for _index_ files in paths that end inside a directory.
-
-For example:
-
-```javascript
-require('./content')(app);
-```
-
-Since no specific file is mentioned, Webpack will go into the `./content` directory and look for an _index_ file. I decided to use index files so I can `require` in files synchronously and keep code maintainable.
-
-The controller in `./js/content/content-controller.js` exports a function that takes 1 argument. This function is called in `./js/content/index.js` and passes a reference to the Angular module from `./js/index.js` as an argument.
-
-We also pass in the `$scope` object via [Inline Array Annotation](https://docs.angularjs.org/guide/di) so we can expose our variables for use in the HTML.
 
 ### Setup
 To get started, fork this repo and clone a copy on your local machine.
