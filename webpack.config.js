@@ -2,22 +2,27 @@ const path = require('path');
 
 module.exports = {
   context: path.resolve('js'),
+
   entry: ['./index'],
+
   output: {
     path: path.resolve('public'),
     filename: 'bundle.js'
   },
+
   devServer: {
     contentBase: 'public'
   },
+
   module: {
     preLoaders: [
       {
-        test: /\.js$/, // include .js files
-        exclude: /node_modules/, // exclude any and all files in the node_modules folder
+        test: /\.js$/,
+        exclude: /node_modules/,
         loader: "jshint-loader"
       }
     ],
+
     loaders: [
       {
         test: /\.js$/,
@@ -41,6 +46,7 @@ module.exports = {
       }
     ]
   },
+
   jshint: {
     camelcase: true,
 
@@ -53,6 +59,7 @@ module.exports = {
     // custom reporter function
     // reporter: function(errors) { }
   },
+
   resolve: {
     extensions: ['', '.js', '.es6']
   }
