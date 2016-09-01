@@ -4,18 +4,17 @@ html {
   html body {
     height: 100%;
     width: 100%;
+    font-size: 10px;
     position: relative;
-    background: url("../images/min-bgimage.jpg") no-repeat center center;
-    background-size: 165vh auto;
-    font-family: sans-serif;
+    background: url("../images/min-bgimage.jpg") no-repeat top center;
+    background-size: cover;
     overflow: hidden;
     box-sizing: border-box; }
     html body h1 {
-      font-size: 4.9rem; }
-    html body p {
-      font-size: 1.6rem; }
+      font-size: 3rem; }
+    html body p,
     html body a {
-      cursor: pointer; }
+      font-size: 1.1rem; }
     html body .desktop-nav {
       display: none; }
     html body .social-container {
@@ -34,9 +33,9 @@ html {
       color: white; }
       html body .content-wrapper .content-block {
         position: absolute;
-        top: 30%; }
+        transform: translateY(-50%);
+        top: 50%; }
       html body .content-wrapper .theme-btn {
-        font-size: 14px;
         margin: 10px 0 0;
         display: inline-block;
         border: 2px solid white;
@@ -46,18 +45,20 @@ html {
         min-width: 150px;
         text-align: center;
         background-color: transparent;
-        transition: background-color 0.4s ease; }
+        transition: background-color 0.4s ease;
+        cursor: pointer; }
         html body .content-wrapper .theme-btn:hover {
           background-color: white;
           text-decoration: none;
           color: black; }
     @media (min-width: 768px) {
       html body {
-        background-size: 155vh auto; }
+        background-size: 100% 110vh; }
         html body h1 {
-          font-size: 8rem; }
-        html body p {
-          font-size: 1.8rem; }
+          font-size: 4.4rem; }
+        html body p,
+        html body a {
+          font-size: 1.3rem; }
         html body .social-container {
           background-color: rgba(0, 0, 0, 0.7); }
           html body .social-container .mobile-nav {
@@ -65,7 +66,6 @@ html {
           html body .social-container .desktop-nav {
             display: block; }
             html body .social-container .desktop-nav li {
-              display: inline-block;
               float: right;
               text-align: center; }
               html body .social-container .desktop-nav li a {
@@ -76,20 +76,21 @@ html {
                   background-color: white;
                   color: black; }
         html body .content-wrapper .content-block .theme-btn {
-          font-size: 16px;
+          font-size: 1.4rem;
           margin: 15px 0 0;
-          padding: 8px; } }
-    @media (min-width: 1023px) {
+          padding: 6px; } }
+  @media (min-width: 768px) and (min-device-width: 414px) and (orientation: landscape) {
+    html body {
+      background: url("../images/min-bgimage.jpg") no-repeat top center;
+      background-size: cover; } }
+
+    @media (min-width: 1024px) {
       html body {
-        background-size: 186vh; }
-        html body .theme-btn {
-          margin: 45px 0 0; } }
-    @media (min-width: 1400px) {
-      html body {
-        background-size: 200vh; } }
-    @media (min-device-width: 414px) and (orientation: landscape) {
-      html body {
-        background-position: top center;
-        background-size: 185vh; } }
+        background-size: 100% 100vh; }
+        html body h1 {
+          font-size: 6rem; }
+        html body p,
+        html body a {
+          font-size: 1.4rem; } }
 
 /*# sourceMappingURL=main.css.map */
