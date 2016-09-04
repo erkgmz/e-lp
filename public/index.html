@@ -9,11 +9,10 @@
   <body>
 
     <div class="container-fluid">
+
       <div class="inner-wrapper">
+
         <div ng-controller="ContentController">
-          <!-- <ng-md-icon icon="twitter" style="fill: white"></ng-md-icon>
-          <ng-md-icon icon="github-circle" style="fill: white"></ng-md-icon>
-          <ng-md-icon icon="linkedin" style="fill: white"></ng-md-icon> -->
 
           <section class="row social-container">
 
@@ -21,11 +20,13 @@
             <div class="btn-group col-xs-12 mobile-nav"
               uib-dropdown
               is-open="status.isopen">
+
               <button class="btn col-xs-2"
                 id="single-button"
                 type="button"
                 uib-dropdown-toggle
                 ng-disabled="disabled">
+
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
               </button>
               <uib-tabset class="drop-down-menu col-xs-12"
@@ -36,38 +37,48 @@
                 role="menu"
                 aria-labelledby="single-button"
                 vertical="true">
+
                 <li class="col-xs-12"
                   role="menuitem"
                   ng-repeat="cta in socialCTAs">
+
                   <a ng-href="{{cta.hyperText.src}}"
                     target="_blank">
                     {{cta.text}}
                   </a>
-                  <hr>
+
+                  </hr>
                 </li>
               </uib-tabset>
             </div>
 
             <!-- DESKTOP -->
             <ul class="nav desktop-nav col-xs-12">
+
               <li class="col-sm-2 col-md-1"
                 ng-repeat="cta in socialCTAs">
+
                 <a ng-href="{{cta.hyperText.src}}"
                   target="_blank">
+
                   <ng-md-icon class="icon-theme"
                     icon="{{cta.logo}}">
                   </ng-md-icon>
                 </a>
               </li>
             </ul>
-
           </section>
 
           <section class="row content-wrapper">
+
             <div class="content-block col-xs-12 text-center">
+
               <h1 class="col-xs-12">{{headline}}</h1>
+
               <p class="col-xs-12">{{byline}}</p>
+
               <div class="text-center">
+
                 <a ng-href="mailto:{{contentCTA.hyperText.mailTo}}"
                   class="theme-btn">
                   {{contentCTA.text}}
@@ -75,7 +86,6 @@
               </div>
             </div>
           </section>
-
         </div>
       </div>
     </div>
