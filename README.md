@@ -15,6 +15,7 @@ The technologies used in the development of this site include:
 * Angular.js 1.5.8
   * Angular Animate 1.5.8
   * Angular UI Bootstrap
+  * Angular Material Design
 * Webpack
 * Sass
 * Babel
@@ -43,6 +44,8 @@ We also pass in the `$scope` object via [Inline Array Annotation](https://docs.a
 [Angular Animate documentation](https://docs.angularjs.org/api/ngAnimate)
 
 [Angular UI Bootstrap documentation](https://angular-ui.github.io/bootstrap/)
+
+[Angular Material Design Icons](https://klarsys.github.io/angular-material-icons/#)
 
 ### Webpack
 To generate a bundle file in `./public` run `webpack` in root directory.
