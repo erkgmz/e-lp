@@ -23,8 +23,6 @@ The technologies used in the development of this site include:
 * Trello
 
 ### Angular 1.5.8
-controller/function exports/ index.js files/ angular bootstrap/ angular 1.5/ inline injection
-
 The Angular module lives in `./js/index.js`, where we are importing Angular, Angular Animate, and Angular UI Bootstrap using ___ES6 syntax___ and injecting ui.bootstrap & ngAnimate dependencies.
 
 Webpack default behavior looks for _index_ files in paths that end inside a directory.
