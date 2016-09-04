@@ -37,22 +37,19 @@ html {
       padding: 6px 15px;
       background-color: rgba(0, 0, 0, 0.7);
 
-      .btn-group {
+      .btn {
+        border: none;
+        color: white;
+        background-color: rgba(0, 0, 0, .001);
+      }
 
-        .btn {
-          border: none;
-          color: white;
-          background-color: rgba(0, 0, 0, .001);
-        }
+      .drop-down-menu {
 
-        .drop-down-menu {
+        li {
+          text-align: center;
 
-          li {
-            text-align: center;
-
-            hr {
-              margin: 0;
-            }
+          hr {
+            margin: 0;
           }
         }
       }
@@ -116,12 +113,14 @@ html {
 
             a {
               color: white;
+              fill: white;
               transition: background-color 0.4s ease;
               border-radius: 5px;
 
               &:hover {
                 background-color: white;
                 color: black;
+                fill: black;
               }
             }
           }

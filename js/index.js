@@ -10,7 +10,8 @@ require('../css/bootstrap/dist/css/bootstrap.css');
 require('../css/main.css');
 require('angular-animate');
 require('angular-ui-bootstrap');
+require('angular-material-icons');
 
-var app = angular.module('myApp', ['ui.bootstrap', 'ngAnimate']);
+var app = angular.module('myApp', ['ui.bootstrap', 'ngAnimate', 'ngMdIcons']);
 
 require('./content')(app);

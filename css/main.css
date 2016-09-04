@@ -21,13 +21,13 @@ html {
       height: auto;
       padding: 6px 15px;
       background-color: rgba(0, 0, 0, 0.7); }
-      html body .social-container .btn-group .btn {
+      html body .social-container .btn {
         border: none;
         color: white;
         background-color: rgba(0, 0, 0, 0.001); }
-      html body .social-container .btn-group .drop-down-menu li {
+      html body .social-container .drop-down-menu li {
         text-align: center; }
-        html body .social-container .btn-group .drop-down-menu li hr {
+        html body .social-container .drop-down-menu li hr {
           margin: 0; }
     html body .content-wrapper {
       color: white; }
@@ -70,11 +70,13 @@ html {
               text-align: center; }
               html body .social-container .desktop-nav li a {
                 color: white;
+                fill: white;
                 transition: background-color 0.4s ease;
                 border-radius: 5px; }
                 html body .social-container .desktop-nav li a:hover {
                   background-color: white;
-                  color: black; }
+                  color: black;
+                  fill: black; }
         html body .content-wrapper .content-block .theme-btn {
           font-size: 1.4rem;
           margin: 15px 0 0;

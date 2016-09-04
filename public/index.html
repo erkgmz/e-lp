@@ -11,6 +11,9 @@
     <div class="container-fluid">
       <div class="inner-wrapper">
         <div ng-controller="ContentController">
+          <!-- <ng-md-icon icon="twitter" style="fill: white"></ng-md-icon>
+          <ng-md-icon icon="github-circle" style="fill: white"></ng-md-icon>
+          <ng-md-icon icon="linkedin" style="fill: white"></ng-md-icon> -->
 
           <section class="row social-container">
 
@@ -47,11 +50,13 @@
 
             <!-- DESKTOP -->
             <ul class="nav desktop-nav col-xs-12">
-              <li class="col-xs-2"
+              <li class="col-sm-2 col-md-1"
                 ng-repeat="cta in socialCTAs">
                 <a ng-href="{{cta.hyperText.src}}"
                   target="_blank">
-                  {{cta.text}}
+                  <ng-md-icon class="icon-theme"
+                    icon="{{cta.logo}}">
+                  </ng-md-icon>
                 </a>
               </li>
             </ul>
