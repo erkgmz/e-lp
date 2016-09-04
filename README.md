@@ -45,7 +45,7 @@ We also pass in the `$scope` object via [Inline Array Annotation](https://docs.a
 
 [Angular UI Bootstrap documentation](https://angular-ui.github.io/bootstrap/)
 
-[Angular Material Design Icons](https://klarsys.github.io/angular-material-icons/#)
+[Angular Material Design documentation](https://klarsys.github.io/angular-material-icons/#)
 
 ### Webpack
 To generate a bundle file in `./public` run `webpack` in root directory.
