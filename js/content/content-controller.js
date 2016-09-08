@@ -1,7 +1,7 @@
 module.exports = function(myApp) {
   myApp.controller('ContentController', [ '$scope', ($scope) => {
     $scope.headline = 'Hi, I\'m Erik.';
-    $scope.byline = 'Creative thinker, passionate learner, and front-end JavaScript developer.';
+    $scope.byline = 'Creative thinker, JavaScript whisperer, and Web Developer in Bakersfield, CA';
 
     class CTA {
       constructor(text, src = null, mailTo = null, logo = null) {
