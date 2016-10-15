@@ -12,10 +12,10 @@ html {
     overflow: hidden;
     box-sizing: border-box; }
     html body h1 {
-      font-size: 3rem; }
+      font-size: 4rem; }
     html body p,
     html body a {
-      font-size: 1.1rem; }
+      font-size: 1.2rem; }
     html body .desktop-nav {
       display: none; }
     html body .social-container {
@@ -78,10 +78,14 @@ html {
                   background-color: white;
                   color: black;
                   fill: black; }
-        html body .content-wrapper .content-block .theme-btn {
-          font-size: 1.4rem;
-          margin: 15px 0 0;
-          padding: 6px; } }
+        html body .content-wrapper .content-block {
+          width: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+          html body .content-wrapper .content-block .theme-btn {
+            font-size: 1.4rem;
+            margin: 15px 0 0;
+            padding: 6px; } }
   @media (min-width: 768px) and (min-device-width: 414px) and (orientation: landscape) {
     html body {
       background: url("../images/min-bgimage.jpg") no-repeat top center;

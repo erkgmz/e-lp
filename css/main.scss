@@ -21,12 +21,12 @@ html {
     box-sizing: border-box;
 
     h1 {
-      font-size: 3rem;
+      font-size: 4rem;
     }
 
     p,
     a {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     .desktop-nav {
@@ -131,6 +131,9 @@ html {
       .content-wrapper {
 
         .content-block {
+          width: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
 
           .theme-btn {
             font-size: 1.4rem;
@@ -149,7 +152,7 @@ html {
 
     @media(min-width: $breakpoint-lg) {
       background-size: 100% 100vh;
-
+      
       h1 {
         font-size: 6rem;
       }
