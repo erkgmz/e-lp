@@ -5,13 +5,15 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --inline --hot"
+    "start": "webpack-dev-server --inline --hot",
+    "minify": "webpack -p"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-animate": "^1.5.8",
+    "angular-material-icons": "^0.7.1",
     "angular-ui-bootstrap": "^2.1.1",
     "bootstrap": "^3.3.7"
   },

@@ -1,7 +1,7 @@
 module.exports = function(myApp) {
   myApp.controller('ContentController', [ '$scope', ($scope) => {
     $scope.headline = 'Thanks for visiting';
-    $scope.byline = 'This page is no longer active, please go to ';
+    $scope.byline = 'This page is no longer active, please go to';
 
     class CTA {
       constructor(text, src, mailTo, logo) {
@@ -20,7 +20,6 @@ module.exports = function(myApp) {
       new CTA('LINKEDIN', 'https://www.linkedin.com/in/erkgmz', undefined, 'linkedin')
     ];
 
-    $scope.contentCTA = new CTA('Go to erikgomez.co', 'https://goo.gl/igpdEH', undefined);
     $scope.bylineCTA = new CTA('erikgomez.co', 'https://goo.gl/0UngW1', undefined);
   }]);
 };
