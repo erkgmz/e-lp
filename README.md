@@ -1,6 +1,18 @@
 # My Website
 Checkout my site at [erikgomez.co](http://erikgomez.co/)
 
+## Getting started 
+First clone this repo by going to your terminal and running `git clone git@github.com:erkgmz/e-lp.git`
+
+Change into the `/e-lp`.
+
+Run `npm install` to get all the required packages .
+
+Then run app in development with `npm start` and navigate to `localhost:8080`.
+
+When work is complete, run `npm run minify` to build app in production. This will generate the `/public` 
+directory with static files for production.
+
 ## Technologies used
 This is my personal website. I chose to develop this as a technology demonstration and portfolio piece.
 
@@ -10,7 +22,7 @@ The technologies used in the development of this site include:
 
 * HTML, CSS, JavaScript
 * Bootstrap
-* ES6 features
+* ES6
 * Node.js/NPM
 * Angular.js 1.5.8
   * Angular Animate 1.5.8
@@ -19,8 +31,6 @@ The technologies used in the development of this site include:
 * Webpack
 * Sass
 * Babel
-* Git
-* Trello
 
 ### Angular 1.5.8
 The Angular module lives in `./js/index.js`, where we are importing Angular, Angular Animate, and Angular UI Bootstrap using ___ES6 syntax___ and injecting ui.bootstrap & ngAnimate dependencies.
@@ -33,11 +43,11 @@ For example:
 require('./content')(app);
 ```
 
-Since no specific file is mentioned, Webpack will go into the `./content` directory and look for an _index_ file. I decided to use index files so I can `require` in files synchronously and keep code maintainable.
+Since no specific file is mentioned, Webpack will go into the `./content` directory and look for an _index_ file. I decided to use index files so I can `require` files synchronously and keep code maintainable.
 
 The controller in `./js/content/content-controller.js` exports a function that takes 1 argument. This function is called in `./js/content/index.js` and passes a reference to the Angular module from `./js/index.js` as an argument.
 
-We also pass in the `$scope` object via [Inline Array Annotation](https://docs.angularjs.org/guide/di) so we can expose our variables for use in the HTML.
+We also pass in the `$scope` object via [Inline Array Annotation](https://docs.angularjs.org/guide/di) so we can expose our variables.
 
 [Angular Animate documentation](https://docs.angularjs.org/api/ngAnimate)
 
@@ -64,13 +74,6 @@ Edit styles in `/css/main.scss`.
 Compile sass into css by running `sass main.scss:main.css` from `/css` directory.
 
 You will need to re-run `webpack` to generate bundle file with new styles from the root directory.
-
-### Setup
-To get started, fork this repo and clone a copy on your local machine.
-
-Run `npm install` to install all npm packages and dev dependencies.
-
-Run `npm start` to start the webpack-dev-server, and navigate to `http://localhost:8080/index.html` in your browser.
 
 ##### Editing CSS
 This project uses SASS to compile CSS. Edits to styles must be done in `css/main.scss`.
