@@ -78,10 +78,10 @@
 
               <h1>{{headline}}</h1>
 
-              <p>{{byline}} {{bylineCTA}}</p>
+              <p>{{byline}}</p>
 
-              <a ng-href="mailto:{{contentCTA.hyperText.mailTo}}"
-                class="theme-btn">
+              <a href="{{bylineCTA.hyperText.src}}"
+                 class="theme-btn">
                 {{contentCTA.text}}
               </a>
             </div>
