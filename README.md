@@ -4,9 +4,9 @@ Checkout my site at [erikgomez.co](http://erikgomez.co/)
 ## Getting started 
 First clone this repo by going to your terminal and running `git clone git@github.com:erkgmz/e-lp.git`
 
-Change into the `/e-lp`.
+Change into the `/e-lp` directory.
 
-Run `npm install` to get all the required packages .
+Run `npm install` to get install required packages.
 
 Then run app in development with `npm start` and navigate to `localhost:8080`.
 
