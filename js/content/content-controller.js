@@ -1,7 +1,7 @@
 module.exports = function(myApp) {
   myApp.controller('ContentController', [ '$scope', ($scope) => {
     $scope.headline = 'Thanks for visiting';
-    $scope.byline = 'This page is no longer active, go to ' + $scope.bylineCTA;
+    $scope.byline = 'This page is no longer active, please go to ';
 
     class CTA {
       constructor(text, src, mailTo, logo) {
