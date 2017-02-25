@@ -6,12 +6,12 @@ module.exports = {
   entry: ['./index'],
 
   output: {
-    path: path.resolve('public'),
+    path: path.resolve('docs'),
     filename: 'bundle.js'
   },
 
   devServer: {
-    contentBase: 'public'
+    contentBase: 'docs'
   },
 
   module: {
