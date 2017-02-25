@@ -71,7 +71,7 @@ All output is being added to the `./public` directory.
 ### Notes on the MAIN branch
 Search engines are currently indexing this page eventhough `noindex` tags are present. GitHub allows search engines to index pages that are hosted on the master branch.
 
-(Similar issue on Stackoverflow.)[http://stackoverflow.com/questions/15844905/how-to-stop-google-indexing-my-github-repository]
+[Similar issue on Stackoverflow.](http://stackoverflow.com/questions/15844905/how-to-stop-google-indexing-my-github-repository)
 
 By removing the master branch and hosting on a different branch, GitHub will prevent search engines from indexing your page. 
 
